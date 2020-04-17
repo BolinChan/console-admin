@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="//jutb.oss-cn-hangzhou.aliyuncs.com/web/themes/px/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//jutb.oss-cn-hangzhou.aliyuncs.com/web/themes/px/static/css/common.css">
+
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript">
+        if (navigator.appName == 'Microsoft Internet Explorer') {
+            if (navigator.userAgent.indexOf("MSIE 5.0") > 0 || navigator.userAgent.indexOf("MSIE 6.0") > 0 || navigator.userAgent.indexOf("MSIE 7.0") > 0) {
+                alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
+            }
+        }
+
+        window.sysinfo = {
+            'uniacid': '97', 'acid': '97', 'uid': '124', 'siteroot': '//qn.jutaobao.cc/',
+            'siteurl': '//qn.jutaobao.cc/web/index.php?c=site&a=entry&do=import&m=yunbei_mic&from=yunbei_mic',
+            'attachurl': '//orxy33ots.bkt.clouddn.com/',
+            'attachurl_local': '//qn.jutaobao.cc/attachment/',
+            'attachurl_remote': '//orxy33ots.bkt.clouddn.com/',
+            'MODULE_URL': '//qn.jutaobao.cc/addons/yunbei_mic/', 'cookie': { 'pre': '57da_' },
+            'account': { "acid": "97", "uniacid": "97", "token": "neujlx2350l5x20sgdfrs5hnmi2kof1i", "encodingaeskey": "Dvl2wLQ3GvNgzGtqFbFs9z2kI45ckCPnEFyIcYGF8Ay", "access_token": "", "level": "4", "name": "\u597d\u8bc4\u795e\u5668", "account": "haopingshenqi", "original": "gh_02dc42ab5454", "signature": "", "country": "", "province": "", "city": "", "username": "", "password": "", "lastupdate": "0", "key": "wx8f8eba9ba0137d2b", "secret": "bf4acc86a24a6e57f6d67a072f228584", "styleid": "1", "jsapi_ticket": "", "subscribeurl": "", "topad": "", "footad": "", "auth_refresh_token": "refreshtoken@@@7wQUvEa9rWZ3kSbb2TkUaflu4RxXOvfLNOjN_AyjT8g", "default_acid": "97", "type": "3", "uid": "124", "starttime": "1487839503", "endtime": "1527091200", "groups": { "97": { "groupid": "97", "uniacid": "97", "title": "\u9ed8\u8ba4\u4f1a\u5458\u7ec4", "orderlist": "0", "isdefault": "1", "credit": "0" } }, "grouplevel": "0" }
+        }; 
+    </script>
+    <script>var require = { urlArgs: 'v=2018052315' };</script>
+
+    <script type="text/javascript" src="//jutb.oss-cn-hangzhou.aliyuncs.com/web/resource/js/app/util.js"></script>
+    <script type="text/javascript" src="//jutb.oss-cn-hangzhou.aliyuncs.com/web/resource/js/require.js"></script>
+    <script type="text/javascript" src="//jutb.oss-cn-hangzhou.aliyuncs.com/web/resource/js/app/config.js"></script>
+
+
+    <script type="text/javascript" src="//jutb.oss-cn-hangzhou.aliyuncs.com/web/resource/js/lib/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+    <div class="menuTitle">
+        <h3>二维码</h3>
+    </div>
+
+    <style>
+        body {
+            background-color: #fff;
+
+        }
+
+        .panel-body {
+            padding-top: 50px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 12px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        th {
+            margin: 50px;
+        }
+    </style>
+
+    <div class="panel-body">
+
+        <div class="pageTable ">
+            <table class="table table-hover table-bordered">
+                <tbody>
+                    <tr class="tr">
+                        <th>二维码</th>
+                        <th>二维码名称</td>
+                        <th>总数</td>
+                        <th>使用数量</td>
+                        <th>创建时间</td>
+                        <th>接口</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(function ($) {
+        var div1;
+        var tatol;
+        var aid = 97;
+        $.getUrlParam = function (name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        var aid = 97;
+        var gid = $.getUrlParam('gid');
+        $.ajax({
+            url: "//wechat.yunbeisoft.com/index_test.php/home/qrcode/liove_qrcode_show",
+            type: "POST",
+            dataType: "json",
+            data: JSON.stringify({ 'aid': aid, 'gid': gid }),
+            success: function (xhr) {
+                //this 默认为调用本次AJAX请求时传递的options参数
+                if (xhr['error'] == true) {
+                    alert(xhr['msg']);
+                } else {
+                    if (xhr['tatol'] < 20) {
+                        tatol = xhr['tatol'];
+                    } else {
+                        tatol = 20;
+                    }
+
+                    $(xhr['data']).each(function (index, item) {
+                        // index 是序号，类似于 i
+                        //item是其实中的项   item = arr[index]
+                        div1 = "<tr ><td>  <img src='" + item['qr_url'] + "' width='80px alt=''></td>" +
+                            "<td>" + item['qrcode_name'] + "</td>" +
+                            "<td>" + item['total'] + "</td>" +
+                            "<td > " + item['use_num'] + "</td>" +
+                            "<td > " + item['addtime'] + "</td>" +
+                            "<td>" +
+                            "<a href='qrcode_form.html?id=" + item['id'] + "&operating=edit&gid=" + gid + "'>修改二维码</a>&nbsp;&nbsp;&nbsp;" +
+                            "<a onclick='dels(" + item['id'] + ")' >删除二维码</a>&nbsp;&nbsp;&nbsp;" +
+
+                            "</td>";
+                        //赋值到html中    
+                        $(".tr").after(div1);
+                    });
+
+                }
+            }
+
+        })
+
+
+
+
+
+    })
+    function dels(ids) {
+        $.ajax({
+            url: "//wechat.yunbeisoft.com/index_test.php/home/qrcode/liove_qrcode_del",
+            type: "POST",
+            dataType: "json",
+            data: JSON.stringify({ 'id': ids }),
+            success: function (xhr) {
+                //this 默认为调用本次AJAX请求时传递的options参数
+                if (xhr['error'] == true) {
+                    alert(xhr['msg']);
+                } else {
+                    alert("删除成功");
+                    window.location.reload()
+                }
+            }
+
+        })
+    }
+</script>
+
+</html>

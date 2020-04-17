@@ -1,0 +1,42 @@
+.tab {
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+}
+.editableCell {
+  position: relative;
+}
+
+.editableCellIcon,
+.editableCellIconCheck {
+  cursor: pointer;
+}
+
+.editableCellIcon {
+  line-height: 14px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+  display: none;
+}
+
+td:hover .editableCellIcon {
+  display: inline-block;
+}
+
+.editableCellIcon:hover,
+.editableCellIconCheck:hover {
+  color: #1890ff;
+}
+.text > textarea {
+  min-height: 120px;
+  max-height: 500px;
+  word-break: break-all;
+}
+a {
+  color: #f3f0f0;
+}
+a:hover {
+  color: #1890ff;
+}

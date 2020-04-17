@@ -1,0 +1,34 @@
+.txt {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menuStyle {
+  height: 100%;
+}
+.menuStyle li::after {
+  border: none !important;
+}
+.menuStyle > li {
+  width: 99.9% !important;
+  margin: 0 !important;
+}
+.menuStyle > li:hover {
+  background: #e6f7ff;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 16px;
+}
+.group:hover {
+  background-color: rgb(216, 216, 216);
+}
+.current,
+.current:hover {
+  background-color: rgb(196, 196, 196);
+}

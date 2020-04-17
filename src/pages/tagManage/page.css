@@ -1,0 +1,49 @@
+.pageBox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.content {
+  display: flex;
+  height: 100%;
+}
+.contentTag{
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+.sidebarTag {
+  width: 250px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgb(237, 234, 232);
+}
+.sidebarTag::-webkit-scrollbar{
+  display: none
+}
+.title {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 16px;
+}
+
+.inlineDiv {
+  display: inline-block;
+}
+.marginStyle {
+  margin: 0;
+}
+.labelStyle > div:first-child {
+  margin-top: 5px;
+}
+.labelStyle label::before {
+  color: #fff;
+}

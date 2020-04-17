@@ -1,0 +1,29 @@
+.tPadding {
+  padding: 20px;
+}
+.tPadding2 {
+  padding: 0 20px 20px 20px;
+}
+.head {
+  /* height: 36px;
+      line-height: 36px; */
+  font-size: 14px;
+  background: #e6f7ff;
+  margin-bottom: 0;
+  padding: 10px;
+}
+.marB0 {
+  margin-bottom: 0;
+}
+.btns {
+  height: 56px;
+}
+.btns > span {
+  margin-left: 15px;
+}
+.tipSpan {
+  color: rgba(0, 0, 0, 0.45);
+}
+/* .tPadding2 > div > div > div > div {
+    height: 505px;
+  } */

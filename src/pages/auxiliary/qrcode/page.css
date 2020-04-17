@@ -1,0 +1,7 @@
+.wrapStyle > div > div {
+  height: 100%;
+  position: relative;
+}
+.tableStyle {
+  padding: 10px;
+}

@@ -1,0 +1,9 @@
+
+.dot > span > span {
+  width: 8px;
+  height: 8px;
+}
+.prompt {
+  color: #1890ff;
+  margin-right: 10px;
+}

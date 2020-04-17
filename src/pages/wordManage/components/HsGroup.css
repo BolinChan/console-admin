@@ -1,0 +1,47 @@
+.group {
+    width: 100%;
+    height: 60px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.group:hover {
+    cursor: move;
+}
+
+.option:hover {
+    background-color: rgb(216, 216, 216);
+    /* background-color: rgba(24, 144, 255, 0.16); */
+}
+
+.current {
+    background-color: rgb(196, 196, 196);
+    /* background-color:#1890ff; */
+    /* color: #fff; */
+}
+/* .current .itemName{
+    color: #fff
+} */
+
+.itemName {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666666;
+    white-space: nowrap;
+}
+
+.btns {
+    font-size: 16px;
+}
+
+a {
+    color: #f3f0f0;
+}
+
+a:hover {
+    color: #1890ff;
+}

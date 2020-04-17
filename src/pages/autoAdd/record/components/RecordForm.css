@@ -1,0 +1,29 @@
+.item {
+  padding: 10px 0;
+  flex: 1;
+}
+.flexItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.flexItem button {
+  margin: 10px;
+}
+.rightAbs {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.tPadding {
+  padding: 20px;
+}
+.rel_position {
+  position: relative;
+}
+.tablestyle {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+}

@@ -1,0 +1,134 @@
+
+
+.container {
+  background: #f0f2f5;
+  width: 100%;
+  height: 100%;
+}
+.tab {
+  margin-bottom: 16px;
+}
+.fansTab{
+  /* max-height: 395px; */
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+.barBox {
+  padding: 0 0 24px 24px;
+}
+.rankBox {
+  padding: 0 24px 24px 72px;
+}
+.rankList {
+  height: 266px;
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  /* max-height: 260px; */
+  overflow: hidden;
+}
+.rankList:hover{
+  overflow-y: auto;
+}
+.rankList::-webkit-scrollbar{
+  display: none
+}
+.rankList li span {
+  font-size: 14px;
+}
+.rankList li {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  zoom: 1;
+}
+.rankItemNum {
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 16px;
+  margin-top: 1.5px;
+  text-align: center;
+  width: 20px;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #f5f5f5;
+}
+.rankItemTop {
+  color: #fff;
+  background-color: #314659;
+}
+.rankItemTitle {
+  flex: 2;
+  margin-right: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:global .ant-card-extra{
+  padding: 10px 0!important;
+  line-height: 25px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+:global .ant-card-head-title{
+  font-size: 14px
+}
+:global .antd-pro-charts--pie-legend{
+  max-height: 100%;
+  overflow-y: auto;
+}
+:global .antd-pro-charts--pie-legend::-webkit-scrollbar{
+  display: none
+}
+:global .antd-pro-charts--pie-pie.antd-pro-charts--pie-hasLegend .antd-pro-charts--pie-chart {
+  width: calc(100% - 300px);
+}
+:global .antd-pro-charts--pie-pie .antd-pro-charts--pie-legend{
+  width: 260px;
+}
+:global .antd-pro-charts--pie-pie .antd-pro-charts--pie-legend li{
+  display: flex;
+  align-items: baseline;
+  justify-content:space-between;
+}
+:global .antd-pro-charts--pie-legendTitle{
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+:global .antd-pro-charts--pie-pie .antd-pro-charts--pie-value{
+  position: relative;
+  padding-left: 10px
+}
+.spinS{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconLoad{
+    padding: 2px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.isload{
+  color:  rgb(24, 144, 255);
+}
+.isload:hover{
+    background: rgb(24, 144, 255);
+    color: #fff;
+}
+:global .ant-tabs-bar{
+  padding: 0px 20px;
+}

@@ -1,0 +1,41 @@
+
+.moneyInput {
+  display: flex;
+}
+
+.moneyInput input {
+  text-align: center;
+  background: #fff;
+}
+.interval {
+  width: 10%;
+  margin: 0;
+}
+.input1,
+.input2 {
+  width: 45%;
+  margin: 0;
+}
+.interval input {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  padding: 0;
+  pointer-events: none;
+}
+.input1 input {
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+}
+.input2 input {
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
+  box-sizing: border-box;
+}
+.input1 input:focus,
+.input1 input:hover,
+.input2 input:focus,
+.input2 input:hover {
+  border: 1px solid #1890ff;
+}

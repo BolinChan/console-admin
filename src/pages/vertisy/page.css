@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  background: #fff;
+}
+.main {
+  min-width: 600px;
+  height: 100%;
+  overflow: hidden;
+}
+.scollFelx {
+  padding: 7.5px;
+  height: 100%;
+  overflow-y: auto;
+}
+.prompt {
+  margin-left: 20px;
+  color: #c9c9c9;
+}
+.item,
+.Image,
+.time {
+  padding: 10px;
+  display: flex;
+}
+.item button,
+.Image {
+  margin-left: 120px;
+}
+.Image {
+  padding-top: 0;
+}
+.time {
+  height: 60px;
+  margin-left: 120px;
+}
+.title,
+.devtitle {
+  padding: 10px;
+  width: 120px;
+  text-align: right;
+}
+.maxW {
+  max-width: 250px;
+  min-width: 50px;
+}
+.buddy > div > div {
+  height: 100%;
+  overflow: hidden;
+}
+.tablestyle {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+}
+:global .wrapClass .ant-tabs-content{
+  height: 100%;
+}
+.ellipsis{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.icon{
+  font-size: 18px;
+  color:#1890ff;
+  cursor: pointer;
+}
+.del{
+  position: absolute;
+  top: -40px;
+  width: 100px;
+  left: 45px;
+}

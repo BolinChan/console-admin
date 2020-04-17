@@ -1,0 +1,20 @@
+.padLR {
+  padding: 0 10px;
+}
+.dot > span > span {
+  width: 8px;
+  height: 8px;
+}
+.textAlign {
+  text-align: center;
+}
+.beyond {
+  max-width: 283px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.h,
+.beyond {
+  height: 25px;
+}

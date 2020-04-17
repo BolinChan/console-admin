@@ -1,0 +1,35 @@
+
+.beyond {
+  max-width: 283px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.h,
+.beyond {
+  height: 25px;
+}
+.padLR {
+  padding: 0 10px;
+}
+.wrapStyle > div > div {
+  height: 100%;
+  position: relative;
+}
+.dhs{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
+}
+.foot {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  left: 0;
+}
+.selColor > div > div > div {
+  padding-left: 0;
+}

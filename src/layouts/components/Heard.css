@@ -1,0 +1,120 @@
+.logo {
+    text-align: center;
+    background: #002140;
+    height: 64px;
+    line-height: 64px;
+}
+
+.LayoutStyle {
+    height: 100%;
+    display: flex;
+}
+
+.logo img {
+  width: 140px;
+}
+
+.siderStyle {
+  height: 100vh;
+  left: 0;
+  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+  padding-bottom: 20px;
+}
+
+.menuStyle {
+  height: calc(100% - 64px);
+  overflow: overlay;
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+.menuStyle::-webkit-scrollbar{
+  display: none
+}
+.heardStyle {
+    background: #fff;
+    padding: 0 20px;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    display: flex;
+    justify-content: space-between;
+}
+
+.RightStyle {
+    /* margin-left: 200px; */
+    flex: 1;
+    height: 100%;
+    display: flex;
+}
+
+.ContentStyles {
+    margin: 20px;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.childrenStyle {
+    background: #fff;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+}
+
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.trigger:hover {
+    color: #1890ff;
+}
+
+.dot {
+    display: flex;
+    align-items: baseline;
+}
+
+.dot>.hoverStyle {
+    padding: 0 10px;
+}
+
+.hoverStyle {
+    cursor: pointer;
+}
+
+.hoverStyle:hover {
+    background: rgba(24, 144, 255, 0.85);
+    ;
+    color: #fff;
+}
+
+.dot>span>span {
+    width: 8px;
+    height: 8px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.upLog p {
+    margin-bottom: 8px;
+}
+
+.anmi {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

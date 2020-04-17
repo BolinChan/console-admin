@@ -1,0 +1,57 @@
+.item,
+.Image,
+.time {
+  padding: 10px;
+  display: flex;
+}
+.item button,
+.Image {
+  margin-left: 120px;
+}
+.title,
+.devtitle {
+  padding: 10px;
+  width: 120px;
+  text-align: right;
+}
+.formItemStyle {
+  flex: 1;
+}
+.columnWidth {
+  max-width: 160px;
+}
+.imgFlex {
+  display: flex;
+}
+.box {
+  width: 50px;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+.box::before {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+.box img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.maxWidth {
+  max-width: 400px;
+}
+.ljCard{
+  max-width: 320px;
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  height: 85px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.65) ;
+  -webkit-box-shadow:  0px 0px 10px 1px rgba(0, 21, 41, 0.08);
+  box-shadow: 0px 0px 10px 1px rgba(0, 21, 41, 0.08);
+  /* box-shadow: 0px 0px 10px 1px rgba(147, 160, 175, 0.38); */
+}
+

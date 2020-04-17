@@ -1,0 +1,66 @@
+
+.formStyle {
+  /* margin: 0; */
+  padding: 10px;
+}
+.labelDiv > div:first-child {
+  padding-right: 13px;
+}
+.labelDiv > div:first-child label::before {
+  opacity: 0;
+}
+.nolabel > div:first-child label {
+  opacity: 0;
+}
+.dateStyle {
+  margin-bottom: 0;
+  display: inline-block;
+}
+/* .title > div:first-child label {
+  height: 51px;
+  line-height: 51px;
+} */
+.tip {
+  margin-left: 20px;
+  color: #c9c9c9;
+}
+.hisDiv {
+  margin: 0 auto;
+  width: 75%;
+  max-width: 1200px;
+}
+.wrapStyle > div > div {
+  height: 100%;
+  position: relative;
+}
+.tableStyle {
+  padding: 10px;
+  margin-bottom: 56px;
+}
+.foot {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  left: 0;
+}
+.foot > div {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  color: #1890ff;
+  height: 100%;
+  line-height: 72px;
+}
+.vistart{
+  padding-right: 6px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+:global .audioContainer >div audio{
+  position: absolute;
+  top: 114px;
+  left: 40px;
+  width: 355px;
+}

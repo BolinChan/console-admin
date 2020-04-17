@@ -1,0 +1,37 @@
+
+.tagsW {
+  max-width: 15%;
+}
+
+.Fl {
+  display: flex;
+  align-items: center;
+}
+.beyond {
+  max-width: 210px;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 10px;
+  line-height: 25px;
+}
+.beyond > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.navButton {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.noWrap {
+  white-space: nowrap;
+}
+.modalItem{
+  margin-bottom: 20px;
+}
+.modalItem:last-child{
+  margin: 0;
+}

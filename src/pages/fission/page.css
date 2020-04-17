@@ -1,0 +1,165 @@
+.buddy>div>div {
+    height: 100%;
+    overflow: hidden;
+  }
+  .imgBox{
+    position: relative;
+  }
+  .imgBox >div{
+    display: table;
+    position: absolute;
+}
+
+.nickName {
+    padding: 16px 50px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.Fl {
+    display: flex;
+    justify-content: space-between
+}
+.container {
+    background-color: #f0f2f5;
+    width: 100%;
+    height: 100%;
+}
+
+.headerItems {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.headerItem {
+    text-align: center;
+    border-right: 0.5px solid #e8e8e8;
+}
+
+.headerItem:last-child {
+    border: none;
+}
+
+.headerItem p {
+    color: rgba(0, 0, 0, .45);
+}
+
+.headerItem span {
+    color: rgba(0, 0, 0, .85);
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.dataList {
+    /* margin-top: 20px; */
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.extraContent {
+    line-height: 55px;
+    display: flex;
+}
+
+.linkList {
+    margin-right: 20px;
+}
+
+.linkList a {
+    margin-left: 20px;
+    color: rgba(0, 0, 0, .65);
+}
+
+.linkList .active {
+    color: #1890ff;
+}
+
+.stepsLayout {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    top: 55px;
+}
+
+/* .boot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: right;
+    background: #fff;
+} */
+
+.formboot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    z-index: 1;
+    width: 100%;
+    text-align: right;
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+}
+
+.qrbac{
+    background: url("../../assets/qr.gif") no-repeat;
+    width: 100%;
+    background-size: contain;  
+}
+.imgbac{
+    background: url("../../assets/heard.png") no-repeat;
+    width: 100%;
+    background-size: contain; 
+}
+
+.headerTitle {
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.backa{
+    float: right;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.spinabs{
+    position: absolute;
+    width: 100%;
+    top: 48%;
+}
+
+.treeName{
+  
+    margin-left: 10px;
+}
+.topLevel{
+    padding:0 16px;
+    height:40px;
+    background: #fff;
+    z-index:1;
+    line-height: 40px;
+  
+}
+.topLevel strong{
+    width:150px;
+    display: inline-block;
+}
+
+:global(#treeTed .ant-tree .ant-tree-switcher) {
+    color:rgb(24, 144, 255) !important;
+}
+:global(#treeTed .ant-tree li ul){
+    padding: 0 0 0 35px!important;
+}
+:global(#treeTed .ant-tree li){
+    padding: 10px 0!important;
+}
+:global(#treeTed .ant-tree li .ant-tree-node-content-wrapper .ant-tree-title div){
+    border-bottom: 1px solid #d9d9d9; 
+}

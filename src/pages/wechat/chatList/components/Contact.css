@@ -1,0 +1,98 @@
+.item {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 15px 0; */
+  line-height: 22px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.box {
+  padding: 0 7.5px;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  line-height: 22px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.15); */
+  /* background-color: rgba(0, 0, 0, 0.15); */
+  background-color: rgb(221, 221, 221);
+}
+.top:hover {
+  background-color: rgb(208, 208, 208);
+}
+.item:hover {
+  /* 鼠标放上去 */
+  background-color: rgb(216, 216, 216);
+}
+.current {
+  /* 选中 */
+  background-color: rgb(196, 196, 196);
+}
+.current:hover {
+  background-color: rgb(196, 196, 196);
+}
+/* 置顶又选中 */
+.currentAndTop {
+  background-color: rgb(191, 191, 191);
+}
+.avatar {
+  /* width: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  /* width: 180px; */
+  /* width: 293px; */
+  max-width: 230px;
+  width: 166px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-right: 20px; */
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: 13px;
+}
+.info {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 22px;
+  color: #888;
+  font-size: 13px;
+}
+.name {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.time {
+  font-size: 13px;
+  width: 66px;
+  text-align: right;
+  color: #888;
+}
+.des {
+  flex: 1;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

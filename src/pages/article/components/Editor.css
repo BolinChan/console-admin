@@ -1,0 +1,28 @@
+.editor{
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+/* .perview{
+     height: 100%;
+     position: relative;
+} */
+.perview >img{
+    height: 100%;
+}
+.perview >div img{
+    max-width: 100%;
+}
+/* .perview >div{
+    position: absolute;
+    top: 15.5%;
+    left: 0;
+    width: calc(100% - 58px);
+    height: calc(100% - 28.5%);
+    overflow: auto;
+    margin: 0 30px;
+    padding: 10px;
+    background: #f7f7f9;
+} */
+/* .perview >div::-webkit-scrollbar{
+    display: none;
+} */
